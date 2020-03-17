@@ -1,0 +1,68 @@
+<form [formGroup]="regGroup">
+    <div class="card col-lg-6 offset-sm-3 mt-5">
+        <div class="card-body m-3">
+            
+                <div>
+                    <h1 style="text-align: center;">Registration Form </h1>
+                </div>
+                <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control"  name="fname" placeholder="Please Enter first Name" ngModel formControlName="firstname">
+                    </div>
+                    <div class="col">
+                        <label for="lastname">Last Name:</label>
+                    <input type="text" class="form-control"  name="lname" placeholder="Please Enter last Name" ngModel formControlName="lastname">
+                    </div>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail">Email address</label>
+                    <input type="email" class="form-control" name="email" placeholder="Please Enter Your Email" ngModel formControlName="email">
+
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control"  name="password" placeholder="Please Enter Your password" ngModel formControlName="password" >
+
+                </div>
+                <div class="form-group">
+                    <label for="Confirm Password">Confirm Password:</label>
+                    <input type="password" class="form-control"  name="confirmpassword" placeholder="Please Enter Your Confirm password" ngModel formControlName="confirmpass">
+                    
+
+                </div>
+                <div class="form-group">
+                    <label for="mobilenumber">Mobile Number</label>
+                    <input type="number" class="form-control"  name="mobile" placeholder="Please Enter Your mobile number"  ngModel formControlName="mobile">
+
+                </div>
+            
+                <div class="form-group">
+                    <label for="inputdate">Date of Birth:</label>
+                    <input type="date" class="form-control"  name="dob" placeholder="Please Enter Your DOB" ngModel formControlName="dob">
+
+                </div>
+
+
+
+                                   
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Agree to terms and conditions
+                            </label>
+                        </div>
+                    </div>
+
+                   
+                    <button type="submit" class="btn btn-outline-success btn-block" (click)="submit()" [disabled]="regGroup.invalid">Submit</button>
+        
+            
+                
+            </div>
+    </div>
+</form>
+

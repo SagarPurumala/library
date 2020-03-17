@@ -1,0 +1,29 @@
+
+<div class="card col-lg-4 offset-lg-4 mt-5">
+    <div class="card-body m-3">
+  <form [formGroup]="loginGroup">
+  <h3 style="text-align: center;">Login </h3>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" name="email" placeholder="Enter your email" ngModel formControlName="email">
+     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Enter your Password" ngModel formControlName="password">
+    </div>
+    <span *ngIf="error" style="color:red;">Email and password is incorrect</span><br>
+    <a href=""><u>Forgot password</u></a>
+
+        
+    <div style="margin-top: 30px;">
+    <button type="submit" class="btn btn-outline-success btn-lg" (click)="submit()"  style="margin-right: 100px;">Login</button>
+    <button type="submit" class="btn btn-outline-success btn-lg" ><a routerLink="/register">Sign up</a> </button>
+    
+    </div>
+  </form>
+  </div>
+</div>
+
+
+
