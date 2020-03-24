@@ -1,0 +1,16 @@
+#mySidenav a {
+    position: absolute;
+    left: -280px;
+    transition: 0.3s;
+    padding: 5px;
+    width: 300px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(235, 67, 145);
+    border-radius: 0 100px 100px 0;
+    background-color: rgb(52, 54, 54);
+  }
+
+  #mySidenav a:hover {
+    left: 0;
+  }

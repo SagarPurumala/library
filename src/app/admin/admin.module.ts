@@ -13,6 +13,7 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
     CommonModule,
     FormsModule,
     ReactiveFormsModule
-  ]
+  ],
+  exports: [AdminhomeComponent]
 })
 export class AdminModule { }

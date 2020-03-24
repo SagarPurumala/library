@@ -21,7 +21,8 @@ const routes: Routes = [
     {path:"login",component:LoginComponent,children:[{path:"register",component:RegisterComponent},]},
     {path:"about",component:AboutComponent},
     {path:'home',component:HomeComponent},
-    {path:'userhome',component:UserhomeComponent}
+    {path:'userhome',component:UserhomeComponent},
+    {path:"adminhome",component:AdminhomeComponent,children:[{path:'home',component:HomeComponent}]}
    
 ];
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { customValidators } from './Validators';
+import { NavbarService } from 'src/app/navbar.service';
 
 @Component({
   selector: 'app-register',
@@ -10,9 +11,10 @@ import { customValidators } from './Validators';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private builder:FormBuilder, private router:Router) { }
+  constructor(private builder:FormBuilder, private router:Router,private nav:NavbarService) { }
   regGroup;
   ngOnInit() {
+    this.nav.show();
     this.regGroup=this.builder.group({
       firstname:['',Validators.required],
       lastname:['',Validators.required],
