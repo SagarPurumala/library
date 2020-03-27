@@ -11,6 +11,8 @@ import { MycustomersComponent } from './mycustomers/mycustomers.component';
 
 const routes: Routes = [
   {path:"addcustomer",component:AddcustomersComponent},
+  {path:"adminlogin",component:AdminloginComponent,children:[{path:"addcustomers",component:AddcustomersComponent,children:[{path:"adminlogin",component:AdminloginComponent}]}]},
+  {path:"addcustomers",component:AddcustomersComponent,children:[{path:"adminlogin",component:AdminloginComponent}]},
   // {path:"adminhome",component:AdminhomeComponent,children:[{path:"addcustomer",component:AddcustomersComponent}]},
   
 ];

@@ -14,7 +14,8 @@ const routes: Routes = [
   {path:"adminlogin",component:AdminloginComponent},
   {path:"addcustomers",component:AddcustomersComponent},
   //{path:"header",component:HeaderComponent},
- // {path:"adminhome",component:AdminhomeComponent,children:[{path:"adminlogin",component:AdminloginComponent}]},
+//path:"adminlogin",component:AdminloginComponent,children:[{path:"addcustomers",component:AddcustomersComponent,children:[{path:"adminlogin",component:AdminloginComponent}]}]},
+  //{path:"addcustomers",component:AddcustomersComponent,children:[{path:"adminlogin",component:AdminloginComponent}]},
   {path:'userhome',component:UserHomeComponent},
   {path:'userlogin',component:UserLoginComponent},
 

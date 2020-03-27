@@ -1,4 +1,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav class="navbar navbar-expand-sm navbar-light bg-dark">
+    <h2 style="color: white; margin-right: 950px;">Welcome, Admin</h2>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" (click)="home()" style="color: white;"><h4><i class="fa fa-sign-out">Logout </i></h4></a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <div *ngIf="adminnav.visible" class="sidebar"> -->
     <nav *ngIf="adminnav.avisible" class="sidebar">
     <a  (click)="adminhome()">Home</a>
