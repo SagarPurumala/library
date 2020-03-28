@@ -23,8 +23,8 @@ export class AdminloginComponent implements OnInit {
   }
   submit()
   {
-    const adminemail="sagarpurumala21@gmail.com";
-    const adminpassword="qwerty";
+    const adminemail="admin";
+    const adminpassword="admin";
     if(adminemail==this.aloginGroup.value.aemail&&adminpassword==this.aloginGroup.value.apassword){
     sessionStorage.setItem('AdminEmail',this.aloginGroup.value.aemail);
     sessionStorage.setItem('AdminPassword',this.aloginGroup.value.apassword);
