@@ -5,11 +5,12 @@ import { UserregistrationComponent } from './userregistration/userregistration.c
 import { UserHomeComponent } from './user-home/user-home.component';
 import { AtmsimulatorComponent } from './atmsimulator/atmsimulator.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MyTransactionComponent } from './my-transaction/my-transaction.component';
 
 
 
 @NgModule({
-  declarations: [UserLoginComponent, UserregistrationComponent, UserHomeComponent, AtmsimulatorComponent],
+  declarations: [UserLoginComponent, UserregistrationComponent, UserHomeComponent, AtmsimulatorComponent,MyTransactionComponent],
   imports: [
     CommonModule,
     FormsModule,

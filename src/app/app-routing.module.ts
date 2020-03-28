@@ -7,6 +7,7 @@ import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
 import { UserHomeComponent } from './user/user-home/user-home.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { MycustomersComponent } from './admin/mycustomers/mycustomers.component';
+import { MyTransactionComponent } from './user/my-transaction/my-transaction.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'userhome',component:UserHomeComponent},
   {path:'userlogin',component:UserLoginComponent},
 
-  {path:"mycustomers",component:MycustomersComponent}
+  {path:"mycustomers",component:MycustomersComponent},
+  {path:"mytransaction",component:MyTransactionComponent}
 ];
 
 @NgModule({
