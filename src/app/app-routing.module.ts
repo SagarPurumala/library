@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { UserhomeComponent } from './user/userhome/userhome.component';
 import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
 import { AdminhomeComponent } from './admin/adminhome/adminhome.component';
+import { AddbooksComponent } from './admin/addbooks/addbooks.component';
+import { UsersComponent } from './admin/users/users.component';
 
 
 const routes: Routes = [
@@ -22,7 +24,9 @@ const routes: Routes = [
     {path:"about",component:AboutComponent},
     {path:'home',component:HomeComponent},
     {path:'userhome',component:UserhomeComponent},
-    {path:"adminhome",component:AdminhomeComponent,children:[{path:'home',component:HomeComponent}]}
+    {path:"adminhome",component:AdminhomeComponent,children:[{path:'addbooks',component:AddbooksComponent}]},
+    {path:'addbooks',component:AddbooksComponent},
+    {path:'users',component:UsersComponent}
    
 ];
 

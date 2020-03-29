@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarService } from 'src/app/navbar.service';
+import { AdminnavService } from '../adminnav.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-adminhome',
@@ -8,10 +10,13 @@ import { NavbarService } from 'src/app/navbar.service';
 })
 export class AdminhomeComponent implements OnInit {
 
-  constructor(private nav:NavbarService) { }
+  constructor(private nav:NavbarService,private adminnav:AdminnavService,private router:Router) { }
 
   ngOnInit() {
      this.nav.hide();
+     this.adminnav.show();
   }
-
+  addbooks(){
+    this.router.navigate(['/addbooks']);
+  }
 }
