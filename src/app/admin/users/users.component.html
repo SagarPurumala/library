@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav *ngIf="adminnav.avisible" class="navbar navbar-expand-lg navbar-light bg-dark">
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" style="margin-right: 20px;" id="mySidenav" class="sidenav">
+        <a class="nav-link"><b>Library Management System</b></a>
+      </li>
+      <li class="nav-item active" style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-fw fa-home"></i> HOME</a>
+      </li>
+
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink='/users' style="color: white;"><i class="fa fa-fw fa-user-o"></i> USERS</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-info-circle"></i> TRANSACTION</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink='/addbooks' style="color: white;"><i class="fa fa-book"></i> BOOKS</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-book"></i> MEMBER</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-book"></i> ARCHIVE</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-search" aria-hidden="true"></i>ADVANCE
+          SEARCH</a>
+      </li>
+      <li class="nav-item " style="margin-right: 50px;">
+        <a class="nav-link" routerLink='/home' style="color: white;"><i class="fa fa-sign-out"
+            aria-hidden="true"></i>LOGOUT</a>
+      </li>
+      <li class="nav-item " style="float: right;">
+        <a class="nav-link" href="#" style="color:brown;"><b>WELCOME: LIBRARIAN</b></a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
