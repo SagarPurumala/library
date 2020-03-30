@@ -7,14 +7,14 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { UserModule } from './user/user.module';
 import { AdminModule } from './admin/admin.module';
-import { AdminhomeComponent } from './admin/adminhome/adminhome.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    AdminhomeComponent
+  
   ],
   imports: [
     BrowserModule,

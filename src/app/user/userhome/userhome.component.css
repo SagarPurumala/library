@@ -1,0 +1,74 @@
+#mySidenav a {
+    position: absolute;
+    left: -280px;
+    transition: 0.3s;
+    padding: 5px;
+    width: 300px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(235, 67, 145);
+    border-radius: 0 100px 100px 0;
+    background-color: rgb(52, 54, 54);
+  }
+
+  #mySidenav a:hover {
+    left: 0;
+  }
+
+  body{
+    background-image: url("/assets/adminbg.jpg");
+    background-size: cover;
+   
+}
+.borrowtable{
+  padding: 10px;
+  background-color: red;
+  margin-top: 5px;
+
+  
+}
+.sidebar {
+  position: absolute;
+   
+    padding: 0;
+    width: 300px;
+    background-image: url("/assets/adminbg.jpg");
+    background-size: cover;
+   
+    height: 600px;
+    /* overflow: auto; */
+    
+  }
+  .content {
+    margin-top: 0px; 
+ margin-left: 300px;
+ padding: 5px 16px;
+ height: 600px;
+ 
+ 
+ /* overflow: scroll; */
+ 
+}
+#selectbook{
+  margin-top: 5px;
+  color: green;
+  border: 1px dashed green;
+  background-color: lightgreen;
+}
+table,th,td{
+  border:1px black solid;
+  text-align:center;
+  /* border-collapse: collapse;
+  
+  padding:2px; */
+}
+/* section th,section td{
+  padding:10px;
+}  */
+
+#plus
+{
+    background-color: rgb(14, 223, 14);
+    border-radius: 20px;
+    color: white;
+}

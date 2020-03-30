@@ -24,9 +24,8 @@ const routes: Routes = [
     {path:"about",component:AboutComponent},
     {path:'home',component:HomeComponent},
     {path:'userhome',component:UserhomeComponent},
-    {path:"adminhome",component:AdminhomeComponent,children:[{path:'addbooks',component:AddbooksComponent}]},
-    {path:'addbooks',component:AddbooksComponent},
-    {path:'users',component:UsersComponent}
+    
+   
    
 ];
 

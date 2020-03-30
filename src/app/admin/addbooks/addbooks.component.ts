@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarService } from 'src/app/navbar.service';
 import { AdminnavService } from '../adminnav.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-addbooks',
@@ -9,7 +10,7 @@ import { AdminnavService } from '../adminnav.service';
 })
 export class AddbooksComponent implements OnInit {
 
-  constructor(private nav:NavbarService,private adminnav:AdminnavService) { }
+  constructor(private nav:NavbarService,private adminnav:AdminnavService,private router:Router) { }
 
   ngOnInit() {
      this.nav.hide();
