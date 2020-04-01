@@ -1,23 +1,24 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="card col-lg-4 offset-lg-4 mt-5">
-    <div class="card-body m-3">
+<div class="card col-lg-4 offset-lg-4 mt-5" id="adminlogin">
+    <div class="card-body m-2">
   <form [formGroup]="aloginGroup">
   <h3 style="text-align: center;">Admin Login </h3>
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" name="email" placeholder="Enter your email" ngModel formControlName="aemail">
+      <label for="exampleInputEmail1">Username:</label>
+      <input type="email" class="fa fa-fw fa-user"class="form-control" name="email" placeholder="Enter your email" ngModel formControlName="aemail">
      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
+      <label for="exampleInputPassword1">Password:</label>
       <input type="password" class="form-control" name="password" placeholder="Enter your Password" ngModel formControlName="apassword">
     </div>
     <span *ngIf="error" style="color:red;">Email and password is incorrect</span><br>
     <a href=""><u>Forgot password</u></a>
 
         
-    <div style="margin-top: 30px;">
-    <button type="submit" class="btn btn-outline-success btn-lg" (click)="submit()"  style="margin-right: 100px;">Login</button>
+    <div style="margin-top: 20px;">
+    <button type="submit" class="btn btn-primary" (click)="submit()"  >Login</button>
     
     
     </div>

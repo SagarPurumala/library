@@ -5,11 +5,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active" style="margin-right: 20px;" id="mySidenav" class="sidenav">
+      <li class="nav-item active" style="margin-right: 0px;" id="mySidenav" class="sidenav">
         <a class="nav-link"><b>Library Management System</b></a>
       </li>
+      <li class="nav-item active" style="margin-right: 5px;" >
+        <a class="nav-link" style="color: white;"><b>LMS</b></a>
+      </li>
       <li class="nav-item active" style="margin-right: 20px;">
-        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-fw fa-home"></i> HOME</a>
+        <a class="nav-link" routerLink="/adminhome" style="color: white;"><i class="fa fa-fw fa-home"></i> HOME</a>
       </li>
 
       <li class="nav-item " style="margin-right: 20px;">
@@ -43,3 +46,50 @@
 
   </div>
 </nav>
+
+<div class="image">
+  <div class="btnplus">
+    <a routerLink="/addusers" routerLinkActive="active"><button type="button" class="btn " id="plus" >
+        <span class="badge badge-light">+</span> Add Users
+    </button>
+  </a>
+</div>
+<div class="userstable">
+  <a class="fa fa-user fa-fw icon" >UsersTable</a>
+</div>
+<div class="drpdwn">
+<form>
+  <input type="number" min="1" max="100" value="1" class="numberdrpdwn">
+  <span class="drpdwntxt">records per page</span>
+  
+</form>
+</div>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">USERNAME</th>
+      <th scope="col">PASSWORD</th>
+      <th scope="col">FIRST NAME</th>
+      <th scope="col">LAST NAME</th>
+      <th scope="col">EMAIL ADDRESS</th>
+      <th scope="col">MOBILE NUMBER</th>
+      <th scope="col">DATE OF BIRTH</th>
+      <th scope="col">ACTION</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>

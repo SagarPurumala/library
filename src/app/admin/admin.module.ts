@@ -6,16 +6,19 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { AddbooksComponent } from './addbooks/addbooks.component';
 import { UsersComponent } from './users/users.component';
 import { Routes,RouterModule } from '@angular/router';
+import { AddusersComponent } from './addusers/addusers.component';
 
 const routes: Routes = [
   {path:'addbooks',component:AddbooksComponent},
-  {path:'users',component:UsersComponent}
+  {path:'users',component:UsersComponent},
+  {path:'addusers',component:AddusersComponent}
 ];
 
 @NgModule({
   declarations: [AdminloginComponent  ,AdminhomeComponent,
     AddbooksComponent,
-    UsersComponent],
+    UsersComponent,
+    AddusersComponent],
   imports: [RouterModule.forChild(routes),
     CommonModule,
     FormsModule,

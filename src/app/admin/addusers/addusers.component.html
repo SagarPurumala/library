@@ -1,0 +1,117 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav *ngIf="adminnav.avisible" class="navbar navbar-expand-lg navbar-light bg-dark">
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" style="margin-right: 0px;" id="mySidenav" class="sidenav">
+        <a class="nav-link"><b>Library Management System</b></a>
+      </li>
+      <li class="nav-item active" style="margin-right: 5px;" >
+        <a class="nav-link" style="color: white;"><b>LMS</b></a>
+      </li>
+      <li class="nav-item active" style="margin-right: 20px;">
+        <a class="nav-link" routerLink="/adminhome" style="color: white;"><i class="fa fa-fw fa-home"></i> HOME</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink='/users' style="color: white;"><i class="fa fa-fw fa-user-o"></i> USERS</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-file"></i> TRANSACTION</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink='/addbooks' style="color: white;"><i class="fa fa-book"></i> BOOKS</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-users"></i> MEMBER</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-archive"></i> ARCHIVE</a>
+      </li>
+      <li class="nav-item " style="margin-right: 20px;">
+        <a class="nav-link" routerLink="" style="color: white;"><i class="fa fa-search" aria-hidden="true"></i>ADVANCE
+          SEARCH</a>
+      </li>
+      <li class="nav-item " style="margin-right: 50px;">
+        <a class="nav-link" routerLink='/home' style="color: white;"><i class="fa fa-sign-out"
+            aria-hidden="true"></i>LOGOUT</a>
+      </li>
+      <li class="nav-item " style="float: right;">
+        <a class="nav-link" href="#" style="color:brown;"><b>WELCOME: LIBRARIAN</b></a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+<form [formGroup]="regGroup">
+    <div class="card col-lg-6 offset-sm-3 mt-5">
+        <div class="card-body m-3">
+            
+                <div>
+                    <h3 style="background-color: red;">Add Users</h3>
+                </div>
+               
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control"  name="fname" placeholder="Please Enter first Name" ngModel formControlName="firstname">
+                        </div>
+                        <div class="col">
+                            <label for="lastname">Last Name:</label>
+                        <input type="text" class="form-control"  name="lname" placeholder="Please Enter last Name" ngModel formControlName="lastname">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail">Email address</label>
+                        <input type="email" class="form-control" name="email" placeholder="Please Enter Your Email" ngModel formControlName="email">
+    
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control"  name="password" placeholder="Please Enter Your password" ngModel formControlName="password" >
+    
+                    </div>
+                    <div class="form-group">
+                        <label for="Confirm Password">Confirm Password:</label>
+                        <input type="password" class="form-control"  name="confirmpassword" placeholder="Please Enter Your Confirm password" ngModel formControlName="confirmpass">
+                        
+    
+                    </div>
+                    <div class="form-group">
+                        <label for="mobilenumber">Mobile Number</label>
+                        <input type="number" class="form-control"  name="mobile" placeholder="Please Enter Your mobile number"  ngModel formControlName="mobile">
+    
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="inputdate">Date of Birth:</label>
+                        <input type="date" class="form-control"  name="dob" placeholder="Please Enter Your DOB" ngModel formControlName="dob">
+    
+                    </div>
+    
+    
+    
+                                       
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value=""  id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Agree to terms and conditions
+                                </label>
+                            </div>
+                        </div>
+    
+                       
+                        <button type="submit" class="btn btn-outline-success btn-block" (click)="submit()" [disabled]="regGroup.invalid">Submit</button>
+            
+                
+                    
+            </div>
+    </div>
+</form>
+
+

@@ -14,3 +14,40 @@
   #mySidenav a:hover {
     left: 0;
   }
+  .image {
+    
+     
+     
+      background-image: url("/assets/adminbg.jpg");
+      background-size: cover;
+     
+      height: 600px;
+      /* overflow: auto; */
+      
+    }
+    #plus
+    {
+        background-color: rgb(14, 223, 14);
+        border: 1px solid transparent;
+        color: white;
+        margin: 40px;
+    }
+    .userstable{
+      padding: 10px;
+      background-color: red;
+      
+  }
+  .drpdwn
+  {
+      margin-top: 10px;
+      margin-left: 25px;
+  }
+  .numberdrpdwn
+  {
+      border-radius: 5px;
+  }
+  .drpdwntxt
+  {
+      font-size:18px;
+      color: black;
+  }
